@@ -1,7 +1,7 @@
 import React from "react";
 import "./Main.css";
 import Nav from "../../components/Nav";
-import MainLeft from "../../components/MainLeft";
+import Feeds from "../../components/Feeds";
 import MainRight from "../../components/MainRight";
 
 const Main = () => {
@@ -9,7 +9,7 @@ const Main = () => {
     <div className="main">
       <Nav />
       <main>
-        <MainLeft />
+        <Feeds />
         <MainRight />
       </main>
     </div>

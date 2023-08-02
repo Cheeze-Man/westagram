@@ -5,6 +5,9 @@
   justify-content: center;
   align-items: center;
 } */
+* {
+  box-sizing: border-box;
+}
 .main {
   width: 80%;
   margin: 0 auto;
@@ -12,11 +15,11 @@
 
 nav {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
   display: flex;
   align-content: center;
   justify-content: space-between;
-  height: 40px;
+  height: 50px;
   border-bottom: 1px solid lightgrey;
   padding: 6px 0;
 }
@@ -34,14 +37,15 @@ nav div {
 
 nav img {
   height: 80%;
+  cursor: pointer;
 }
 
 .nav-center input {
   height: 80%;
   width: 100%;
   color: lightgray;
-  text-align: center;
   background-color: rgba(211, 211, 211, 0.207);
+  text-align: center;
   border-radius: 5px;
   border: 1px solid lightgrey;
 }
@@ -51,9 +55,10 @@ nav img {
 }
 .search-icon {
   position: absolute;
-  top: 9px;
+  top: 5px;
   left: 28%;
   color: gray;
+  cursor: text;
 }
 
 .nav-right {
@@ -64,4 +69,83 @@ nav img {
   justify-content: space-between;
   font-size: 32px;
   color: grey;
+  cursor: pointer;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  padding-left: 10%;
+}
+
+.feeds {
+  margin-top: 40px;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightgray;
+}
+article {
+  width: 100%;
+  margin: 10px auto 40px auto;
+}
+
+.feed-user {
+  display: flex;
+  align-content: center;
+  margin: 7px auto 7px 0;
+  padding-left: 3%;
+}
+.fu-img img {
+  border-radius: 50%;
+}
+.feed-images {
+  margin-left: 0;
+}
+.feed-img {
+  width: 100%;
+}
+.fu-info h4,
+p {
+  margin: 0 10px;
+}
+.fu-info p {
+  padding: 0 5px;
+  color: gray;
+  font-size: 0.8rem;
+}
+
+.feed-bottom h4 {
+  padding-left: 3%;
+}
+.feed-bottom input {
+  width: 94%;
+  height: 1.5rem;
+  margin: 5px 3%;
+  padding-left: 5px;
+  font-size: 0.7rem;
+  color: lightgray;
+  background-color: rgba(211, 211, 211, 0.207);
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+.fb-whoLike {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.fb-content h4 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+.fb-content p {
+  font-size: 0.7rem;
+}
+.main-right {
+  border: 1px solid lightgray;
+  width: 30%;
+  height: 10%;
+  margin: 40px 0 auto auto;
 }
